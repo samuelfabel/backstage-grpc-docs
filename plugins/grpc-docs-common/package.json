@@ -15,11 +15,11 @@
   "publishConfig": {
     "access": "public"
   },
-  "homepage": "https://backstage.io",
+  "homepage": "https://github.com/samuelfabel/backstage-grpc-docs",
   "repository": {
     "type": "git",
-    "url": "https://github.com/backstage/community-plugins",
-    "directory": "workspaces/grpc-docs/plugins\\grpc-docs-common"
+    "url": "https://github.com/samuelfabel/backstage-grpc-docs",
+    "directory": "plugins/grpc-docs-common"
   },
   "license": "Apache-2.0",
   "sideEffects": false,

@@ -7,11 +7,10 @@
       "pluginVersion": "0.1.0"
     }
   },
-  "homepage": "https://github.com/backstage/community-plugins",
+  "homepage": "https://github.com/samuelfabel/backstage-grpc-docs",
   "repository": {
     "type": "git",
-    "url": "https://github.com/backstage/community-plugins",
-    "directory": "workspaces/grpc-docs"
+    "url": "https://github.com/samuelfabel/backstage-grpc-docs"
   },
   "license": "Apache-2.0",
   "engines": {

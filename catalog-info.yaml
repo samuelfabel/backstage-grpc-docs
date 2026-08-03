@@ -7,14 +7,13 @@ metadata:
     Backstage plugin that renders a gRPC playground in the API Definition tab
     for catalog entities with spec.type: grpc.
   annotations:
-    github.com/project-slug: backstage/community-plugins
+    github.com/project-slug: samuelfabel/backstage-grpc-docs
   tags:
     - backstage
     - grpc
     - plugin
-    - community-plugins
   links:
-    - url: https://github.com/backstage/community-plugins/tree/main/workspaces/grpc-docs
+    - url: https://github.com/samuelfabel/backstage-grpc-docs
       title: Repository
       icon: github
 

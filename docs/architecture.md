@@ -40,7 +40,9 @@ plugins/
 └── grpc-docs-node/       # @backstage-community/plugin-grpc-docs-node      node-library (engine)
 ```
 
-npm scope: `@backstage-community/*`. `pluginId`: `grpc-docs`. The workspace is shaped to live under [`community-plugins`](https://github.com/backstage/community-plugins) as `workspaces/grpc-docs`.
+npm scope: `@backstage-community/*`. `pluginId`: `grpc-docs`.
+
+Home repository: [`samuelfabel/backstage-grpc-docs`](https://github.com/samuelfabel/backstage-grpc-docs). The layout matches a [community-plugins](https://github.com/backstage/community-plugins) workspace so it can move upstream as `workspaces/grpc-docs` later if desired.
 
 ## Proto source of truth
 

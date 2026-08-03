@@ -69,9 +69,11 @@ Rebuild the backend packages if you change engine/router sources before step 2. 
 
 This repo uses Yarn 4 with PnP (faster on Windows). `community-plugins` itself typically uses `nodeLinker: node-modules` — when dropping this workspace in, inherit that repo’s `.yarnrc.yml`.
 
-## community-plugins
+## Repository
 
-This workspace is shaped to drop into [`backstage/community-plugins`](https://github.com/backstage/community-plugins) as `workspaces/grpc-docs`. Package metadata (`backstage.role`, `pluginId`, `pluginPackages`), Changesets, and Apache-2.0 are already in place.
+Source: [`samuelfabel/backstage-grpc-docs`](https://github.com/samuelfabel/backstage-grpc-docs).
+
+The layout follows a [community-plugins](https://github.com/backstage/community-plugins) workspace (`pluginId`, package roles, Changesets, Apache-2.0) so it can be contributed upstream as `workspaces/grpc-docs` later if desired.
 
 ## License
 
