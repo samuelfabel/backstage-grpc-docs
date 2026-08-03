@@ -10,7 +10,7 @@ import { createRouter } from './router';
  * Register in your Backstage backend:
  *
  * ```ts
- * backend.add(import('@backstage-community/plugin-grpc-docs-backend'));
+ * backend.add(import('@samuelfabel/plugin-grpc-docs-backend'));
  * ```
  */
 export const grpcDocsPlugin = createBackendPlugin({

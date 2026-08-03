@@ -1,7 +1,7 @@
 import TextField from '@material-ui/core/TextField';
 import MenuItem from '@material-ui/core/MenuItem';
 import Typography from '@material-ui/core/Typography';
-import type { GrpcHeaderSpec } from '@backstage-community/plugin-grpc-docs-common';
+import type { GrpcHeaderSpec } from '@samuelfabel/plugin-grpc-docs-common';
 
 export interface RequiredHeadersFormProps {
   headers: GrpcHeaderSpec[];

@@ -12,3 +12,9 @@ backend:
 
 organization:
   name: grpc-docs
+
+# Local playground only — enables Guest ENTER against the stub on :7007.
+auth:
+  environment: development
+  providers:
+    guest: {}

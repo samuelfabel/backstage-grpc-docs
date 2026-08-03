@@ -3,7 +3,7 @@
 ## Backend (`packages/backend/src/index.ts`)
 
 ```ts
-backend.add(import('@backstage-community/plugin-grpc-docs-backend'));
+backend.add(import('@samuelfabel/plugin-grpc-docs-backend'));
 ```
 
 ## Frontend APIs (`packages/app/src/apis.tsx`)
@@ -25,7 +25,7 @@ import {
   grpcApiWidget,
   GrpcDocsClient,
   grpcDocsApiRef,
-} from '@backstage-community/plugin-grpc-docs';
+} from '@samuelfabel/plugin-grpc-docs';
 
 export const apis: AnyApiFactory[] = [
   createApiFactory({

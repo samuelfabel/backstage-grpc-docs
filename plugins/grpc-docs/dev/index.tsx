@@ -5,7 +5,7 @@ import { EntityProvider } from '@backstage/plugin-catalog-react';
 import {
   GRPC_DOCS_ENVIRONMENTS_ANNOTATION,
   GRPC_DOCS_OPERATIONS_ANNOTATION,
-} from '@backstage-community/plugin-grpc-docs-common';
+} from '@samuelfabel/plugin-grpc-docs-common';
 import { GrpcDocsWidget, grpcDocsPlugin } from '../src';
 
 const definition = `syntax = "proto3";

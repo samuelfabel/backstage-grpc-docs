@@ -3,7 +3,7 @@
  *
  * Used by unit tests (ephemeral port) and local playground:
  *
- *   yarn workspace @backstage-community/plugin-grpc-docs-node start:hello
+ *   yarn workspace @samuelfabel/plugin-grpc-docs-node start:hello
  *
  * Default listen: 127.0.0.1:50051 (override with HOST / PORT).
  */

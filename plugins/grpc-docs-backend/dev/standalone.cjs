@@ -46,8 +46,42 @@ app.use((req, res, next) => {
 
 app.use('/api/grpc-docs', createRouter({ logger }));
 
+// Dev-only stub so createDevApp Guest sign-in works without a full auth backend.
+// Discovery points auth at backend.baseUrl (:7007) via app-config.yaml.
+function guestIdentityResponse() {
+  return {
+    providerInfo: {},
+    profile: {
+      email: 'guest@example.com',
+      displayName: 'Guest',
+    },
+    backstageIdentity: {
+      // Unsigned placeholder — local playground only; not verified by this host.
+      token:
+        'eyJhbGciOiJub25lIn0.eyJzdWIiOiJ1c2VyOmRlZmF1bHQvZ3Vlc3QiLCJlbnQiOlsidXNlcjpkZWZhdWx0L2d1ZXN0Il19.',
+      expiresInSeconds: 60 * 60 * 24,
+      identity: {
+        type: 'user',
+        userEntityRef: 'user:default/guest',
+        ownershipEntityRefs: ['user:default/guest'],
+      },
+    },
+  };
+}
+
+app.get('/api/auth/guest/refresh', (_req, res) => {
+  res.json(guestIdentityResponse());
+});
+app.get('/api/auth/guest/start', (_req, res) => {
+  res.json(guestIdentityResponse());
+});
+app.post('/api/auth/guest/start', (_req, res) => {
+  res.json(guestIdentityResponse());
+});
+
 app.listen(port, () => {
   logger.info(`grpc-docs backend listening on http://localhost:${port}`);
   logger.info('health: GET  /api/grpc-docs/health');
   logger.info('call:   POST /api/grpc-docs/call/unary');
+  logger.info('guest:  GET  /api/auth/guest/refresh (dev stub)');
 });

@@ -1,15 +1,15 @@
 {
-  "name": "@backstage-community/plugin-grpc-docs-common",
+  "name": "@samuelfabel/plugin-grpc-docs-common",
   "description": "Common isomorphic types and utilities for the grpc-docs plugin",
   "version": "0.1.0",
   "backstage": {
     "role": "common-library",
     "pluginId": "grpc-docs",
     "pluginPackages": [
-      "@backstage-community/plugin-grpc-docs",
-      "@backstage-community/plugin-grpc-docs-backend",
-      "@backstage-community/plugin-grpc-docs-common",
-      "@backstage-community/plugin-grpc-docs-node"
+      "@samuelfabel/plugin-grpc-docs",
+      "@samuelfabel/plugin-grpc-docs-backend",
+      "@samuelfabel/plugin-grpc-docs-common",
+      "@samuelfabel/plugin-grpc-docs-node"
     ]
   },
   "publishConfig": {
@@ -19,7 +19,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/samuelfabel/backstage-grpc-docs",
-    "directory": "plugins/grpc-docs-common"
+    "directory": "plugins\\grpc-docs-common"
   },
   "license": "Apache-2.0",
   "sideEffects": false,

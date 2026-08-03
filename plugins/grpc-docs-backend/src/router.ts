@@ -1,8 +1,8 @@
 import type {
   ChannelSecurity,
   UnaryCallRequest,
-} from '@backstage-community/plugin-grpc-docs-common';
-import { GrpcEngine } from '@backstage-community/plugin-grpc-docs-node';
+} from '@samuelfabel/plugin-grpc-docs-common';
+import { GrpcEngine } from '@samuelfabel/plugin-grpc-docs-node';
 import type { LoggerService } from '@backstage/backend-plugin-api';
 import express from 'express';
 import Router from 'express-promise-router';

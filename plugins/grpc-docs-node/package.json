@@ -1,15 +1,15 @@
 {
-  "name": "@backstage-community/plugin-grpc-docs-node",
+  "name": "@samuelfabel/plugin-grpc-docs-node",
   "description": "Backstage-agnostic gRPC engine used by the grpc-docs backend (JSON in/out, reflection, unary)",
   "version": "0.1.0",
   "backstage": {
     "role": "node-library",
     "pluginId": "grpc-docs",
     "pluginPackages": [
-      "@backstage-community/plugin-grpc-docs",
-      "@backstage-community/plugin-grpc-docs-backend",
-      "@backstage-community/plugin-grpc-docs-common",
-      "@backstage-community/plugin-grpc-docs-node"
+      "@samuelfabel/plugin-grpc-docs",
+      "@samuelfabel/plugin-grpc-docs-backend",
+      "@samuelfabel/plugin-grpc-docs-common",
+      "@samuelfabel/plugin-grpc-docs-node"
     ]
   },
   "publishConfig": {
@@ -19,7 +19,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/samuelfabel/backstage-grpc-docs",
-    "directory": "plugins/grpc-docs-node"
+    "directory": "plugins\\grpc-docs-node"
   },
   "license": "Apache-2.0",
   "main": "src/index.ts",
@@ -48,9 +48,9 @@
     "test": "backstage-cli package test"
   },
   "dependencies": {
-    "@backstage-community/plugin-grpc-docs-common": "workspace:^",
     "@grpc/grpc-js": "^1.14.4",
     "@grpc/proto-loader": "^0.8.0",
+    "@samuelfabel/plugin-grpc-docs-common": "workspace:^",
     "grpc-js-reflection-client": "^1.4.1",
     "protobufjs": "^8.6.5"
   },

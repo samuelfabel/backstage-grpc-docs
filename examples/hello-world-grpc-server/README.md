@@ -1,13 +1,13 @@
 # Hello World gRPC server
 
 Local `helloworld.Greeter` service used for real unary calls from the
-grpc-docs playground and from `@backstage-community/plugin-grpc-docs-node`
+grpc-docs playground and from `@samuelfabel/plugin-grpc-docs-node`
 tests.
 
 ## Start
 
 ```bash
-yarn workspace @backstage-community/plugin-grpc-docs-node start:hello
+yarn workspace @samuelfabel/plugin-grpc-docs-node start:hello
 ```
 
 Listens on `127.0.0.1:50051` (insecure) with gRPC reflection enabled — same
@@ -28,7 +28,7 @@ target as `examples/catalog-info-samples/hello-world-grpc-api.yaml`.
 
 ## Playground
 
-1. Terminal A: `yarn workspace @backstage-community/plugin-grpc-docs-node start:hello`
-2. Terminal B: `yarn workspace @backstage-community/plugin-grpc-docs-backend start`
-3. Terminal C: `yarn workspace @backstage-community/plugin-grpc-docs start`
+1. Terminal A: `yarn workspace @samuelfabel/plugin-grpc-docs-node start:hello`
+2. Terminal B: `yarn workspace @samuelfabel/plugin-grpc-docs-backend start`
+3. Terminal C: `yarn workspace @samuelfabel/plugin-grpc-docs start`
 4. Environment **local** → Execute `SayHello` (add Bearer header if you started with `REQUIRE_AUTH=1`)

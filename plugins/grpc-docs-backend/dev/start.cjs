@@ -2,22 +2,22 @@
 /**
  * Local playground host — runs compiled dist (no nodeTransform).
  *
- *   yarn workspace @backstage-community/plugin-grpc-docs-backend start
+ *   yarn workspace @samuelfabel/plugin-grpc-docs-backend start
  *
  * Rebuild first if sources changed:
- *   yarn workspace @backstage-community/plugin-grpc-docs-node build
- *   yarn workspace @backstage-community/plugin-grpc-docs-backend build
+ *   yarn workspace @samuelfabel/plugin-grpc-docs-node build
+ *   yarn workspace @samuelfabel/plugin-grpc-docs-backend build
  */
 const Module = require('node:module');
 const fs = require('node:fs');
 const path = require('node:path');
 
 const aliases = {
-  '@backstage-community/plugin-grpc-docs-node': path.resolve(
+  '@samuelfabel/plugin-grpc-docs-node': path.resolve(
     __dirname,
     '../../grpc-docs-node/dist/index.cjs.js',
   ),
-  '@backstage-community/plugin-grpc-docs-common': path.resolve(
+  '@samuelfabel/plugin-grpc-docs-common': path.resolve(
     __dirname,
     '../../grpc-docs-common/dist/index.cjs.js',
   ),

@@ -2,7 +2,7 @@ import FormControl from '@material-ui/core/FormControl';
 import InputLabel from '@material-ui/core/InputLabel';
 import MenuItem from '@material-ui/core/MenuItem';
 import Select from '@material-ui/core/Select';
-import type { GrpcEnvironment } from '@backstage-community/plugin-grpc-docs-common';
+import type { GrpcEnvironment } from '@samuelfabel/plugin-grpc-docs-common';
 
 export interface EnvironmentSelectorProps {
   environments: GrpcEnvironment[];

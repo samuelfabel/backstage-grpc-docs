@@ -34,13 +34,13 @@ The browser never speaks binary protobuf. JSON in, JSON out — the backend talk
 
 ```
 plugins/
-├── grpc-docs/            # @backstage-community/plugin-grpc-docs           frontend-plugin
-├── grpc-docs-backend/    # @backstage-community/plugin-grpc-docs-backend   backend-plugin
-├── grpc-docs-common/     # @backstage-community/plugin-grpc-docs-common    common-library
-└── grpc-docs-node/       # @backstage-community/plugin-grpc-docs-node      node-library (engine)
+├── grpc-docs/            # @samuelfabel/plugin-grpc-docs           frontend-plugin
+├── grpc-docs-backend/    # @samuelfabel/plugin-grpc-docs-backend   backend-plugin
+├── grpc-docs-common/     # @samuelfabel/plugin-grpc-docs-common    common-library
+└── grpc-docs-node/       # @samuelfabel/plugin-grpc-docs-node      node-library (engine)
 ```
 
-npm scope: `@backstage-community/*`. `pluginId`: `grpc-docs`.
+npm scope: `@samuelfabel/*`. `pluginId`: `grpc-docs`.
 
 Home repository: [`samuelfabel/backstage-grpc-docs`](https://github.com/samuelfabel/backstage-grpc-docs). The layout matches a [community-plugins](https://github.com/backstage/community-plugins) workspace so it can move upstream as `workspaces/grpc-docs` later if desired.
 

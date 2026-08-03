@@ -4,7 +4,17 @@
 
 Backstage plugin that adds a **Swagger-style gRPC playground** to the catalog **API Definition** tab for entities with `spec.type: grpc` — the same integration model OpenAPI uses via `@backstage/plugin-api-docs`.
 
-Structured as a **community-plugins workspace**: Yarn 4, `@backstage/cli`, packages under `@backstage-community/*`.
+Structured as a Backstage plugin workspace: Yarn 4, `@backstage/cli`, packages under `@samuelfabel/*`.
+
+## Screenshots
+
+| Method list | Try it out |
+| --- | --- |
+| ![Method list with proto comments](./docs/images/playground-overview.png) | ![Execute unary call](./docs/images/try-it-out.png) |
+
+![Swagger-style request/response docs](./docs/images/method-docs.png)
+
+![Interactive Try it out editor](./docs/images/schema-examples.png)
 
 ## Features (v1)
 
@@ -19,10 +29,10 @@ Structured as a **community-plugins workspace**: Yarn 4, `@backstage/cli`, packa
 
 | Package | Role | Description |
 |---|---|---|
-| [`@backstage-community/plugin-grpc-docs`](./plugins/grpc-docs) | `frontend-plugin` | `ApiDefinitionWidget` + playground UI |
-| [`@backstage-community/plugin-grpc-docs-backend`](./plugins/grpc-docs-backend) | `backend-plugin` | HTTP proxy to the gRPC engine |
-| [`@backstage-community/plugin-grpc-docs-common`](./plugins/grpc-docs-common) | `common-library` | Shared types, annotation helpers |
-| [`@backstage-community/plugin-grpc-docs-node`](./plugins/grpc-docs-node) | `node-library` | Backstage-agnostic gRPC engine |
+| [`@samuelfabel/plugin-grpc-docs`](./plugins/grpc-docs) | `frontend-plugin` | `ApiDefinitionWidget` + playground UI |
+| [`@samuelfabel/plugin-grpc-docs-backend`](./plugins/grpc-docs-backend) | `backend-plugin` | HTTP proxy to the gRPC engine |
+| [`@samuelfabel/plugin-grpc-docs-common`](./plugins/grpc-docs-common) | `common-library` | Shared types, annotation helpers |
+| [`@samuelfabel/plugin-grpc-docs-node`](./plugins/grpc-docs-node) | `node-library` | Backstage-agnostic gRPC engine |
 
 `pluginId`: **`grpc-docs`**
 
@@ -35,8 +45,8 @@ Start at **[docs/README.md](./docs/README.md)** — architecture, annotations, s
 See **[examples/app-wiring.md](./examples/app-wiring.md)**.
 
 ```bash
-yarn --cwd packages/backend add @backstage-community/plugin-grpc-docs-backend
-yarn --cwd packages/app add @backstage-community/plugin-grpc-docs
+yarn --cwd packages/backend add @samuelfabel/plugin-grpc-docs-backend
+yarn --cwd packages/app add @samuelfabel/plugin-grpc-docs
 ```
 
 Catalog samples: [`examples/catalog-info-samples/`](./examples/catalog-info-samples/).
@@ -59,10 +69,10 @@ yarn lint
 yarn start:hello-grpc
 
 # 2) Backend API on :7007
-yarn workspace @backstage-community/plugin-grpc-docs-backend start
+yarn workspace @samuelfabel/plugin-grpc-docs-backend start
 
 # 3) Frontend widget on :3000
-yarn workspace @backstage-community/plugin-grpc-docs start
+yarn workspace @samuelfabel/plugin-grpc-docs start
 ```
 
 Rebuild the backend packages if you change engine/router sources before step 2. Details: [examples/hello-world-grpc-server/README.md](./examples/hello-world-grpc-server/README.md).

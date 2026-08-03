@@ -4,7 +4,7 @@ import type {
   DescribeRequest as CommonDescribeRequest,
   ListServicesRequest as CommonListServicesRequest,
   UnaryCallRequest as CommonUnaryCallRequest,
-} from '@backstage-community/plugin-grpc-docs-common';
+} from '@samuelfabel/plugin-grpc-docs-common';
 
 export type {
   ChannelSecurity,
@@ -13,7 +13,7 @@ export type {
   MethodDescriptor,
   ServiceDescriptor,
   UnaryCallResponse,
-} from '@backstage-community/plugin-grpc-docs-common';
+} from '@samuelfabel/plugin-grpc-docs-common';
 
 export interface ChannelOptions {
   security?: ChannelSecurity;
