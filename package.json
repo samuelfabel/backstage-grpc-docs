@@ -26,7 +26,7 @@
     "clean": "backstage-cli repo clean",
     "test": "backstage-cli repo test --watchAll=false",
     "test:all": "backstage-cli repo test --coverage --watchAll=false",
-    "fix": "backstage-cli repo fix --publish",
+    "fix": "node ./scripts/repo-fix.mjs",
     "lint": "backstage-cli repo lint",
     "lint:all": "backstage-cli repo lint",
     "prettier:check": "prettier --check .",
