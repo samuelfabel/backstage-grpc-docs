@@ -1,0 +1,14 @@
+app:
+  title: grpc-docs Dev
+  baseUrl: http://localhost:3000
+
+backend:
+  baseUrl: http://localhost:7007
+  listen:
+    port: 7007
+  # Local playground only — do not use in production.
+  auth:
+    dangerouslyDisableDefaultAuthPolicy: true
+
+organization:
+  name: grpc-docs

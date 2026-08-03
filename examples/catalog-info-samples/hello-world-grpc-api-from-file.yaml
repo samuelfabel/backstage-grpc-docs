@@ -1,0 +1,44 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: hello-world-grpc-from-file
+  links:
+    - url: ./protos/helloworld.proto
+      title: Proto source
+      icon: code
+  annotations:
+    grpc-docs.io/environments: |
+      - name: local
+        target: 127.0.0.1:50051
+        security: insecure
+      - name: staging
+        target: grpc-staging.internal:443
+        security: ssl
+    grpc-docs.io/operations: |
+      - rpc: helloworld.Greeter/SayHello
+        headers:
+          - name: authorization
+            required: true
+            type: string
+            default: "Bearer "
+        examples:
+          - name: basic
+            summary: Hello padrão
+            value:
+              name: world
+            response:
+              message: Hello world
+        errorExamples:
+          - name: invalid-argument
+            code: INVALID_ARGUMENT
+            summary: name obrigatório
+            value:
+              code: 3
+              message: "INVALID_ARGUMENT: name must not be empty"
+              details: []
+spec:
+  type: grpc
+  lifecycle: experimental
+  owner: guests
+  definition:
+    $text: ./protos/helloworld.proto

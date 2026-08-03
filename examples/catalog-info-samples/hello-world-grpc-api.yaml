@@ -1,0 +1,87 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: hello-world-grpc
+  annotations:
+    grpc-docs.io/environments: |
+      - name: local
+        target: 127.0.0.1:50051
+        security: insecure
+      - name: staging
+        target: grpc-staging.internal:443
+        security: ssl
+    grpc-docs.io/operations: |
+      - rpc: helloworld.Greeter/SayHello
+        headers:
+          - name: authorization
+            required: true
+            type: string
+            default: "Bearer "
+        examples:
+          - name: basic
+            summary: Hello padrão
+            value:
+              name: world
+            response:
+              message: Hello world
+          - name: empty-name
+            summary: Nome vazio (dispara INVALID_ARGUMENT)
+            value:
+              name: ""
+            response:
+              message: Hello
+        errorExamples:
+          - name: invalid-argument
+            code: INVALID_ARGUMENT
+            summary: name obrigatório
+            value:
+              code: 3
+              message: "INVALID_ARGUMENT: name must not be empty"
+              details:
+                - "@type": type.googleapis.com/google.rpc.BadRequest
+                  fieldViolations:
+                    - field: name
+                      description: must not be empty
+          - name: unauthenticated
+            code: UNAUTHENTICATED
+            summary: token ausente ou inválido
+            value:
+              code: 16
+              message: "UNAUTHENTICATED: missing bearer token"
+              details: []
+spec:
+  type: grpc
+  lifecycle: experimental
+  owner: guests
+  definition: |
+    syntax = "proto3";
+
+    package helloworld;
+
+    // Greeter offers simple hello/goodbye RPCs for demos.
+    service Greeter {
+      // Say hello to the world
+      rpc SayHello (HelloRequest) returns (HelloReply);
+      // Say goodbye to the world
+      rpc SayBye (ByeRequest) returns (ByeReply);
+    }
+
+    // HelloRequest is the input to SayHello.
+    message HelloRequest {
+      // The name to greet.
+      string name = 1;
+    }
+
+    // HelloReply is returned by SayHello.
+    message HelloReply {
+      // Greeting message for the caller.
+      string message = 1;
+    }
+
+    message ByeRequest {
+      string farewell = 1; // Optional farewell text
+    }
+
+    message ByeReply {
+      string farewell = 1;
+    }

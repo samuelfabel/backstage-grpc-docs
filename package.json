@@ -1,0 +1,59 @@
+{
+  "name": "grpc-docs",
+  "version": "1.0.0",
+  "private": true,
+  "backstage": {
+    "cli": {
+      "pluginVersion": "0.1.0"
+    }
+  },
+  "homepage": "https://github.com/backstage/community-plugins",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/backstage/community-plugins",
+    "directory": "workspaces/grpc-docs"
+  },
+  "license": "Apache-2.0",
+  "engines": {
+    "node": "20 || 22 || 24"
+  },
+  "packageManager": "yarn@4.9.2",
+  "scripts": {
+    "start": "backstage-cli repo start",
+    "build": "yarn tsc && backstage-cli repo build --all",
+    "build:all": "yarn tsc && backstage-cli repo build --all",
+    "tsc": "tsc",
+    "tsc:full": "tsc --skipLibCheck false --incremental false",
+    "clean": "backstage-cli repo clean",
+    "test": "backstage-cli repo test --watchAll=false",
+    "test:all": "backstage-cli repo test --coverage --watchAll=false",
+    "fix": "backstage-cli repo fix --publish",
+    "lint": "backstage-cli repo lint",
+    "lint:all": "backstage-cli repo lint",
+    "prettier:check": "prettier --check .",
+    "prettier:write": "prettier --write .",
+    "start:hello-grpc": "yarn workspace @backstage-community/plugin-grpc-docs-node start:hello"
+  },
+  "workspaces": {
+    "packages": [
+      "plugins/*"
+    ]
+  },
+  "devDependencies": {
+    "@backstage/cli": "^0.33.0",
+    "@backstage/cli-defaults": "^0.1.0",
+    "@changesets/cli": "^2.27.1",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.15.0",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "jest-environment-node": "^29.7.0",
+    "prettier": "^2.8.8",
+    "typescript": "~5.8.0"
+  },
+  "resolutions": {
+    "@types/react": "^18",
+    "@types/react-dom": "^18"
+  },
+  "prettier": "@backstage/cli/config/prettier"
+}

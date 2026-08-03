@@ -1,0 +1,53 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: grpc-docs
+  title: grpc-docs
+  description: >
+    Backstage plugin that renders a gRPC playground in the API Definition tab
+    for catalog entities with spec.type: grpc.
+  annotations:
+    github.com/project-slug: backstage/community-plugins
+  tags:
+    - backstage
+    - grpc
+    - plugin
+    - community-plugins
+  links:
+    - url: https://github.com/backstage/community-plugins/tree/main/workspaces/grpc-docs
+      title: Repository
+      icon: github
+
+spec:
+  type: backstage-plugin
+  lifecycle: experimental
+  owner: guests
+---
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: grpc-docs-backend
+  description: Backend HTTP API for the grpc-docs plugin
+spec:
+  type: openapi
+  lifecycle: experimental
+  owner: guests
+  system: grpc-docs
+  definition: |
+    openapi: 3.0.3
+    info:
+      title: grpc-docs backend
+      version: 0.1.0
+    paths:
+      /health:
+        get:
+          summary: Health check
+          responses:
+            '200':
+              description: OK
+      /call/unary:
+        post:
+          summary: Execute a unary gRPC call
+          responses:
+            '200':
+              description: JSON response payload

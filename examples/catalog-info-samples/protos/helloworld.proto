@@ -1,0 +1,31 @@
+syntax = "proto3";
+
+package helloworld;
+
+// Greeter offers simple hello/goodbye RPCs for demos.
+service Greeter {
+  // Say hello to the world
+  rpc SayHello (HelloRequest) returns (HelloReply);
+  // Say goodbye to the world
+  rpc SayBye (ByeRequest) returns (ByeReply);
+}
+
+// HelloRequest is the input to SayHello.
+message HelloRequest {
+  // The name to greet.
+  string name = 1;
+}
+
+// HelloReply is returned by SayHello.
+message HelloReply {
+  // Greeting message for the caller.
+  string message = 1;
+}
+
+message ByeRequest {
+  string farewell = 1; // Optional farewell text
+}
+
+message ByeReply {
+  string farewell = 1;
+}

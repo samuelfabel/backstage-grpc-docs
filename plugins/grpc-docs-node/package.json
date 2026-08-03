@@ -1,0 +1,61 @@
+{
+  "name": "@backstage-community/plugin-grpc-docs-node",
+  "description": "Backstage-agnostic gRPC engine used by the grpc-docs backend (JSON in/out, reflection, unary)",
+  "version": "0.1.0",
+  "backstage": {
+    "role": "node-library",
+    "pluginId": "grpc-docs",
+    "pluginPackages": [
+      "@backstage-community/plugin-grpc-docs",
+      "@backstage-community/plugin-grpc-docs-backend",
+      "@backstage-community/plugin-grpc-docs-common",
+      "@backstage-community/plugin-grpc-docs-node"
+    ]
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "homepage": "https://backstage.io",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/backstage/community-plugins",
+    "directory": "workspaces/grpc-docs/plugins\\grpc-docs-node"
+  },
+  "license": "Apache-2.0",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./package.json": "./package.json"
+  },
+  "typesVersions": {
+    "*": {
+      "package.json": [
+        "package.json"
+      ]
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "backstage-cli package build",
+    "clean": "backstage-cli package clean",
+    "lint": "backstage-cli package lint",
+    "prepack": "backstage-cli package prepack",
+    "postpack": "backstage-cli package postpack",
+    "start:hello": "yarn node ./src/test/helpers/helloServer.cjs",
+    "test": "backstage-cli package test"
+  },
+  "dependencies": {
+    "@backstage-community/plugin-grpc-docs-common": "workspace:^",
+    "@grpc/grpc-js": "^1.14.4",
+    "@grpc/proto-loader": "^0.8.0",
+    "grpc-js-reflection-client": "^1.4.1",
+    "protobufjs": "^8.6.5"
+  },
+  "devDependencies": {
+    "@backstage/cli": "^0.33.0",
+    "@grpc/reflection": "^1.0.4"
+  }
+}

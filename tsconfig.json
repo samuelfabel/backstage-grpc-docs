@@ -1,0 +1,15 @@
+{
+  "extends": "@backstage/cli/config/tsconfig.json",
+  "include": [
+    "plugins/*/src",
+    "plugins/*/dev"
+  ],
+  "exclude": ["node_modules"],
+  "compilerOptions": {
+    "types": ["node", "jest"],
+    "outDir": "dist-types",
+    "rootDir": ".",
+    "jsx": "react-jsx",
+    "useUnknownInCatchVariables": false
+  }
+}
