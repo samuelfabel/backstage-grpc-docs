@@ -59,7 +59,7 @@ export function GrpcDocsWidget(props: GrpcDocsWidgetProps) {
   const parseFailed = Boolean(definition.trim()) && tree.services.length === 0;
 
   const envLabel =
-    resolved.name != null
+    resolved.name !== null && resolved.name !== undefined
       ? `${resolved.name} · ${resolved.target}`
       : resolved.target || 'no target';
 

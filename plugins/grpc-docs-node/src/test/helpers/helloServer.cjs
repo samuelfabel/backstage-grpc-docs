@@ -8,6 +8,8 @@
  * Default listen: 127.0.0.1:50051 (override with HOST / PORT).
  */
 /* eslint-disable no-console */
+/* eslint-disable @backstage/no-undeclared-imports -- @grpc/reflection is test/dev-only */
+/* eslint-disable no-restricted-syntax -- standalone CJS helper; not a Backstage backend entry */
 
 const path = require('node:path');
 const grpc = require('@grpc/grpc-js');
@@ -55,12 +57,12 @@ async function startHelloServer(options = {}) {
     SayHello(call, callback) {
       if (requireAuth) {
         const auth = call.metadata.get('authorization')[0];
-        const token =
-          typeof auth === 'string'
-            ? auth
-            : auth != null
-              ? String(auth)
-              : '';
+        let token = '';
+        if (typeof auth === 'string') {
+          token = auth;
+        } else if (auth !== null && auth !== undefined) {
+          token = String(auth);
+        }
         if (!/^Bearer\s+\S+/i.test(token.trim())) {
           callback({
             code: grpc.status.UNAUTHENTICATED,

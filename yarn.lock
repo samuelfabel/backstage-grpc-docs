@@ -17560,7 +17560,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:^8.6.0":
+"eslint@npm:^8.57.0, eslint@npm:^8.6.0":
   version: 8.57.1
   resolution: "eslint@npm:8.57.1"
   dependencies:
@@ -19102,6 +19102,8 @@ __metadata:
     "@changesets/cli": "npm:^2.27.1"
     "@types/jest": "npm:^29.5.14"
     "@types/node": "npm:^22.15.0"
+    eslint: "npm:^8.57.0"
+    globby: "npm:^11.1.0"
     jest: "npm:^29.7.0"
     jest-environment-jsdom: "npm:^29.7.0"
     jest-environment-node: "npm:^29.7.0"

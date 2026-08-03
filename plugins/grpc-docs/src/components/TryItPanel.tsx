@@ -72,8 +72,14 @@ export function TryItPanel(props: TryItPanelProps) {
   const theme = useTheme();
   const abortRef = useRef<AbortController | null>(null);
 
-  const examples = operation?.examples ?? [];
-  const errorExamples = operation?.errorExamples ?? [];
+  const examples = useMemo(
+    () => operation?.examples ?? [],
+    [operation?.examples],
+  );
+  const errorExamples = useMemo(
+    () => operation?.errorExamples ?? [],
+    [operation?.errorExamples],
+  );
   const headerSpecs = operation?.headers ?? [];
   const requestSchema = useMemo(
     () => getMessageSchema(definition, method.requestType),
