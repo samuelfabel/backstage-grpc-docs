@@ -3,7 +3,7 @@ import Button from '@material-ui/core/Button';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import ArrowDropDownIcon from '@material-ui/icons/ArrowDropDown';
-import type { GrpcExample } from '@samuelfabel/plugin-grpc-docs-common';
+import type { GrpcExample } from '@samuel.fabel/plugin-grpc-docs-common';
 
 export interface ExamplesSelectProps {
   examples: GrpcExample[];

@@ -2,7 +2,7 @@
  * TypeScript reference for the local Express host.
  * Runtime entry is `start.cjs` → `standalone.cjs` (compiled dist, no nodeTransform).
  *
- *   yarn workspace @samuelfabel/plugin-grpc-docs-backend start
+ *   yarn workspace @samuel.fabel/plugin-grpc-docs-backend start
  */
 import express from 'express';
 import type { LoggerService } from '@backstage/backend-plugin-api';

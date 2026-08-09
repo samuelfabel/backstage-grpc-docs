@@ -4,7 +4,7 @@
 
 Backstage plugin that adds a **Swagger-style gRPC playground** to the catalog **API Definition** tab for entities with `spec.type: grpc` — the same integration model OpenAPI uses via `@backstage/plugin-api-docs`.
 
-Structured as a Backstage plugin workspace: Yarn 4, `@backstage/cli`, packages under `@samuelfabel/*`.
+Structured as a Backstage plugin workspace: Yarn 4, `@backstage/cli`, packages under `@samuel.fabel/*`.
 
 ## Screenshots
 
@@ -29,24 +29,24 @@ Structured as a Backstage plugin workspace: Yarn 4, `@backstage/cli`, packages u
 
 | Package | Role | Description |
 |---|---|---|
-| [`@samuelfabel/plugin-grpc-docs`](./plugins/grpc-docs) | `frontend-plugin` | `ApiDefinitionWidget` + playground UI |
-| [`@samuelfabel/plugin-grpc-docs-backend`](./plugins/grpc-docs-backend) | `backend-plugin` | HTTP proxy to the gRPC engine |
-| [`@samuelfabel/plugin-grpc-docs-common`](./plugins/grpc-docs-common) | `common-library` | Shared types, annotation helpers |
-| [`@samuelfabel/plugin-grpc-docs-node`](./plugins/grpc-docs-node) | `node-library` | Backstage-agnostic gRPC engine |
+| [`@samuel.fabel/plugin-grpc-docs`](./plugins/grpc-docs) | `frontend-plugin` | `ApiDefinitionWidget` + playground UI |
+| [`@samuel.fabel/plugin-grpc-docs-backend`](./plugins/grpc-docs-backend) | `backend-plugin` | HTTP proxy to the gRPC engine |
+| [`@samuel.fabel/plugin-grpc-docs-common`](./plugins/grpc-docs-common) | `common-library` | Shared types, annotation helpers |
+| [`@samuel.fabel/plugin-grpc-docs-node`](./plugins/grpc-docs-node) | `node-library` | Backstage-agnostic gRPC engine |
 
 `pluginId`: **`grpc-docs`**
 
 ## Documentation
 
-Start at **[docs/README.md](./docs/README.md)** — architecture, annotations, security, HTTP API, and roadmap.
+Start at **[docs/README.md](./docs/README.md)** — architecture, annotations, security, HTTP API, roadmap, and [publishing / Plugin Directory](./docs/publishing.md).
 
 ## Install into a Backstage app
 
 See **[examples/app-wiring.md](./examples/app-wiring.md)**.
 
 ```bash
-yarn --cwd packages/backend add @samuelfabel/plugin-grpc-docs-backend
-yarn --cwd packages/app add @samuelfabel/plugin-grpc-docs
+yarn --cwd packages/backend add @samuel.fabel/plugin-grpc-docs-backend
+yarn --cwd packages/app add @samuel.fabel/plugin-grpc-docs
 ```
 
 Catalog samples: [`examples/catalog-info-samples/`](./examples/catalog-info-samples/).
@@ -69,10 +69,10 @@ yarn lint
 yarn start:hello-grpc
 
 # 2) Backend API on :7007
-yarn workspace @samuelfabel/plugin-grpc-docs-backend start
+yarn workspace @samuel.fabel/plugin-grpc-docs-backend start
 
 # 3) Frontend widget on :3000
-yarn workspace @samuelfabel/plugin-grpc-docs start
+yarn workspace @samuel.fabel/plugin-grpc-docs start
 ```
 
 Rebuild the backend packages if you change engine/router sources before step 2. Details: [examples/hello-world-grpc-server/README.md](./examples/hello-world-grpc-server/README.md).

@@ -7,7 +7,7 @@ import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import CloseIcon from '@material-ui/icons/Close';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
-import type { GrpcEnvironment } from '@samuelfabel/plugin-grpc-docs-common';
+import type { GrpcEnvironment } from '@samuel.fabel/plugin-grpc-docs-common';
 import { CodePreview } from './CodePreview';
 import { EnvironmentSelector } from './EnvironmentSelector';
 

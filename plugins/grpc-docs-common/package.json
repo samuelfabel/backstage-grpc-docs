@@ -1,15 +1,15 @@
 {
-  "name": "@samuelfabel/plugin-grpc-docs-common",
+  "name": "@samuel.fabel/plugin-grpc-docs-common",
   "description": "Common isomorphic types and utilities for the grpc-docs plugin",
   "version": "0.1.0",
   "backstage": {
     "role": "common-library",
     "pluginId": "grpc-docs",
     "pluginPackages": [
-      "@samuelfabel/plugin-grpc-docs",
-      "@samuelfabel/plugin-grpc-docs-backend",
-      "@samuelfabel/plugin-grpc-docs-common",
-      "@samuelfabel/plugin-grpc-docs-node"
+      "@samuel.fabel/plugin-grpc-docs",
+      "@samuel.fabel/plugin-grpc-docs-backend",
+      "@samuel.fabel/plugin-grpc-docs-common",
+      "@samuel.fabel/plugin-grpc-docs-node"
     ]
   },
   "publishConfig": {

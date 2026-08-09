@@ -6,7 +6,7 @@ import type {
   GrpcErrorExample,
   GrpcExample,
   MethodDescriptor,
-} from '@samuelfabel/plugin-grpc-docs-common';
+} from '@samuel.fabel/plugin-grpc-docs-common';
 import {
   formatMessageSchema,
   getMessageSchema,

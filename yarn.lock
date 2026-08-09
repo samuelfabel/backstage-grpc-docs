@@ -10101,16 +10101,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@samuelfabel/plugin-grpc-docs-backend@workspace:plugins/grpc-docs-backend":
+"@samuel.fabel/plugin-grpc-docs-backend@workspace:plugins/grpc-docs-backend":
   version: 0.0.0-use.local
-  resolution: "@samuelfabel/plugin-grpc-docs-backend@workspace:plugins/grpc-docs-backend"
+  resolution: "@samuel.fabel/plugin-grpc-docs-backend@workspace:plugins/grpc-docs-backend"
   dependencies:
     "@backstage/backend-defaults": "npm:^0.13.0"
     "@backstage/backend-plugin-api": "npm:^1.9.0"
     "@backstage/backend-test-utils": "npm:^1.3.0"
     "@backstage/cli": "npm:^0.33.0"
-    "@samuelfabel/plugin-grpc-docs-common": "workspace:^"
-    "@samuelfabel/plugin-grpc-docs-node": "workspace:^"
+    "@samuel.fabel/plugin-grpc-docs-common": "workspace:^"
+    "@samuel.fabel/plugin-grpc-docs-node": "workspace:^"
     "@types/express": "npm:^4.17.21"
     "@types/supertest": "npm:^6.0.2"
     express: "npm:^4.21.2"
@@ -10119,32 +10119,32 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@samuelfabel/plugin-grpc-docs-common@workspace:^, @samuelfabel/plugin-grpc-docs-common@workspace:plugins/grpc-docs-common":
+"@samuel.fabel/plugin-grpc-docs-common@workspace:^, @samuel.fabel/plugin-grpc-docs-common@workspace:plugins/grpc-docs-common":
   version: 0.0.0-use.local
-  resolution: "@samuelfabel/plugin-grpc-docs-common@workspace:plugins/grpc-docs-common"
+  resolution: "@samuel.fabel/plugin-grpc-docs-common@workspace:plugins/grpc-docs-common"
   dependencies:
     "@backstage/cli": "npm:^0.33.0"
     yaml: "npm:^2.8.0"
   languageName: unknown
   linkType: soft
 
-"@samuelfabel/plugin-grpc-docs-node@workspace:^, @samuelfabel/plugin-grpc-docs-node@workspace:plugins/grpc-docs-node":
+"@samuel.fabel/plugin-grpc-docs-node@workspace:^, @samuel.fabel/plugin-grpc-docs-node@workspace:plugins/grpc-docs-node":
   version: 0.0.0-use.local
-  resolution: "@samuelfabel/plugin-grpc-docs-node@workspace:plugins/grpc-docs-node"
+  resolution: "@samuel.fabel/plugin-grpc-docs-node@workspace:plugins/grpc-docs-node"
   dependencies:
     "@backstage/cli": "npm:^0.33.0"
     "@grpc/grpc-js": "npm:^1.14.4"
     "@grpc/proto-loader": "npm:^0.8.0"
     "@grpc/reflection": "npm:^1.0.4"
-    "@samuelfabel/plugin-grpc-docs-common": "workspace:^"
+    "@samuel.fabel/plugin-grpc-docs-common": "workspace:^"
     grpc-js-reflection-client: "npm:^1.4.1"
     protobufjs: "npm:^8.6.5"
   languageName: unknown
   linkType: soft
 
-"@samuelfabel/plugin-grpc-docs@workspace:plugins/grpc-docs":
+"@samuel.fabel/plugin-grpc-docs@workspace:plugins/grpc-docs":
   version: 0.0.0-use.local
-  resolution: "@samuelfabel/plugin-grpc-docs@workspace:plugins/grpc-docs"
+  resolution: "@samuel.fabel/plugin-grpc-docs@workspace:plugins/grpc-docs"
   dependencies:
     "@babel/runtime": "npm:^7.26.0"
     "@backstage/catalog-model": "npm:^1.9.0"
@@ -10164,7 +10164,7 @@ __metadata:
     "@material-ui/core": "npm:^4.12.4"
     "@material-ui/icons": "npm:^4.11.3"
     "@material-ui/lab": "npm:^4.0.0-alpha.61"
-    "@samuelfabel/plugin-grpc-docs-common": "workspace:^"
+    "@samuel.fabel/plugin-grpc-docs-common": "workspace:^"
     "@testing-library/dom": "npm:^10.0.0"
     "@testing-library/jest-dom": "npm:^6.0.0"
     "@testing-library/react": "npm:^16.0.0"

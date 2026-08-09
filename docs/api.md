@@ -37,4 +37,4 @@ Errors: `4xx`/`5xx` with `{ "error": "<message>" }` (gRPC failures may surface a
 
 ## Local standalone host
 
-In this workspace, `yarn workspace @samuelfabel/plugin-grpc-docs-backend start` runs a minimal Express app (with CORS for the `:3000` dev UI) mounting the same router. A full Backstage backend should register the plugin instead — see [examples/app-wiring.md](../examples/app-wiring.md).
+In this workspace, `yarn workspace @samuel.fabel/plugin-grpc-docs-backend start` runs a minimal Express app (with CORS for the `:3000` dev UI) mounting the same router. A full Backstage backend should register the plugin instead — see [examples/app-wiring.md](../examples/app-wiring.md).

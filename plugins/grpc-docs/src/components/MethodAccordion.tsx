@@ -9,8 +9,8 @@ import type {
   DescriptorTree,
   GrpcOperation,
   MethodDescriptor,
-} from '@samuelfabel/plugin-grpc-docs-common';
-import { findOperation } from '@samuelfabel/plugin-grpc-docs-common';
+} from '@samuel.fabel/plugin-grpc-docs-common';
+import { findOperation } from '@samuel.fabel/plugin-grpc-docs-common';
 import { TryItPanel } from './TryItPanel';
 
 export interface MethodAccordionProps {

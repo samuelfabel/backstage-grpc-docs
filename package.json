@@ -31,7 +31,7 @@
     "lint:all": "backstage-cli repo lint --format stylish",
     "prettier:check": "prettier --check .",
     "prettier:write": "prettier --write .",
-    "start:hello-grpc": "yarn workspace @samuelfabel/plugin-grpc-docs-node start:hello"
+    "start:hello-grpc": "yarn workspace @samuel.fabel/plugin-grpc-docs-node start:hello"
   },
   "workspaces": {
     "packages": [

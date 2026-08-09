@@ -1,15 +1,15 @@
 {
-  "name": "@samuelfabel/plugin-grpc-docs",
+  "name": "@samuel.fabel/plugin-grpc-docs",
   "description": "Backstage frontend plugin — gRPC playground widget for API entities (spec.type: grpc)",
   "version": "0.1.0",
   "backstage": {
     "role": "frontend-plugin",
     "pluginId": "grpc-docs",
     "pluginPackages": [
-      "@samuelfabel/plugin-grpc-docs",
-      "@samuelfabel/plugin-grpc-docs-backend",
-      "@samuelfabel/plugin-grpc-docs-common",
-      "@samuelfabel/plugin-grpc-docs-node"
+      "@samuel.fabel/plugin-grpc-docs",
+      "@samuel.fabel/plugin-grpc-docs-backend",
+      "@samuel.fabel/plugin-grpc-docs-common",
+      "@samuel.fabel/plugin-grpc-docs-node"
     ]
   },
   "publishConfig": {
@@ -66,7 +66,7 @@
     "@material-ui/core": "^4.12.4",
     "@material-ui/icons": "^4.11.3",
     "@material-ui/lab": "^4.0.0-alpha.61",
-    "@samuelfabel/plugin-grpc-docs-common": "workspace:^",
+    "@samuel.fabel/plugin-grpc-docs-common": "workspace:^",
     "@uiw/codemirror-themes": "^4.23.0",
     "@uiw/react-codemirror": "^4.23.0",
     "protobufjs": "^7.4.0",

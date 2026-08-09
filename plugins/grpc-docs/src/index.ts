@@ -19,14 +19,14 @@ export {
   parseEnvironments,
   parseOperations,
   findOperation,
-} from '@samuelfabel/plugin-grpc-docs-common';
+} from '@samuel.fabel/plugin-grpc-docs-common';
 export type {
   GrpcEnvironment,
   GrpcErrorExample,
   GrpcExample,
   GrpcHeaderSpec,
   GrpcOperation,
-} from '@samuelfabel/plugin-grpc-docs-common';
+} from '@samuel.fabel/plugin-grpc-docs-common';
 export type {
   ChannelSecurity,
   DescribeRequest,

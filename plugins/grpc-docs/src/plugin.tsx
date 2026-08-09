@@ -36,7 +36,7 @@ export const grpcDocsPlugin = createPlugin({
  *   apiDocsConfigRef,
  *   defaultDefinitionWidgets,
  * } from '@backstage/plugin-api-docs';
- * import { grpcApiWidget } from '@samuelfabel/plugin-grpc-docs';
+ * import { grpcApiWidget } from '@samuel.fabel/plugin-grpc-docs';
  *
  * const widgets = [...defaultDefinitionWidgets(), grpcApiWidget];
  * ```

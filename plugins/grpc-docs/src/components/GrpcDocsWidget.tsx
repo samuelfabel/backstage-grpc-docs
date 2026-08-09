@@ -7,7 +7,7 @@ import {
   GRPC_DOCS_OPERATIONS_ANNOTATION,
   parseEnvironments,
   parseOperations,
-} from '@samuelfabel/plugin-grpc-docs-common';
+} from '@samuel.fabel/plugin-grpc-docs-common';
 import { parseDescriptorFromProto } from '../lib/protoSchema';
 import { resolveEnvironment } from '../lib/resolveTarget';
 import { MethodAccordion } from './MethodAccordion';

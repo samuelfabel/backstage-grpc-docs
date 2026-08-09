@@ -1,15 +1,15 @@
 {
-  "name": "@samuelfabel/plugin-grpc-docs-node",
+  "name": "@samuel.fabel/plugin-grpc-docs-node",
   "description": "Backstage-agnostic gRPC engine used by the grpc-docs backend (JSON in/out, reflection, unary)",
   "version": "0.1.0",
   "backstage": {
     "role": "node-library",
     "pluginId": "grpc-docs",
     "pluginPackages": [
-      "@samuelfabel/plugin-grpc-docs",
-      "@samuelfabel/plugin-grpc-docs-backend",
-      "@samuelfabel/plugin-grpc-docs-common",
-      "@samuelfabel/plugin-grpc-docs-node"
+      "@samuel.fabel/plugin-grpc-docs",
+      "@samuel.fabel/plugin-grpc-docs-backend",
+      "@samuel.fabel/plugin-grpc-docs-common",
+      "@samuel.fabel/plugin-grpc-docs-node"
     ]
   },
   "publishConfig": {
@@ -50,7 +50,7 @@
   "dependencies": {
     "@grpc/grpc-js": "^1.14.4",
     "@grpc/proto-loader": "^0.8.0",
-    "@samuelfabel/plugin-grpc-docs-common": "workspace:^",
+    "@samuel.fabel/plugin-grpc-docs-common": "workspace:^",
     "grpc-js-reflection-client": "^1.4.1",
     "protobufjs": "^8.6.5"
   },

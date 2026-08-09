@@ -1,15 +1,15 @@
 {
-  "name": "@samuelfabel/plugin-grpc-docs-backend",
+  "name": "@samuel.fabel/plugin-grpc-docs-backend",
   "description": "Backstage backend plugin for grpc-docs — proxy unary/streaming calls via the node engine",
   "version": "0.1.0",
   "backstage": {
     "role": "backend-plugin",
     "pluginId": "grpc-docs",
     "pluginPackages": [
-      "@samuelfabel/plugin-grpc-docs",
-      "@samuelfabel/plugin-grpc-docs-backend",
-      "@samuelfabel/plugin-grpc-docs-common",
-      "@samuelfabel/plugin-grpc-docs-node"
+      "@samuel.fabel/plugin-grpc-docs",
+      "@samuel.fabel/plugin-grpc-docs-backend",
+      "@samuel.fabel/plugin-grpc-docs-common",
+      "@samuel.fabel/plugin-grpc-docs-node"
     ]
   },
   "publishConfig": {
@@ -52,8 +52,8 @@
   },
   "dependencies": {
     "@backstage/backend-plugin-api": "^1.9.0",
-    "@samuelfabel/plugin-grpc-docs-common": "workspace:^",
-    "@samuelfabel/plugin-grpc-docs-node": "workspace:^",
+    "@samuel.fabel/plugin-grpc-docs-common": "workspace:^",
+    "@samuel.fabel/plugin-grpc-docs-node": "workspace:^",
     "express": "^4.21.2",
     "express-promise-router": "^4.1.1"
   },

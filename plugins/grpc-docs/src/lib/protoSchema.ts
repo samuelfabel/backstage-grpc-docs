@@ -3,7 +3,7 @@ import type {
   DescriptorTree,
   MethodDescriptor,
   ServiceDescriptor,
-} from '@samuelfabel/plugin-grpc-docs-common';
+} from '@samuel.fabel/plugin-grpc-docs-common';
 
 // keepCase + alternateCommentMode so `//` and block comments become .comment
 const PARSE_OPTIONS: protobuf.IParseOptions = {

@@ -1,7 +1,7 @@
 import type {
   ChannelSecurity,
   GrpcEnvironment,
-} from '@samuelfabel/plugin-grpc-docs-common';
+} from '@samuel.fabel/plugin-grpc-docs-common';
 
 export interface ResolvedEnvironment {
   target: string;

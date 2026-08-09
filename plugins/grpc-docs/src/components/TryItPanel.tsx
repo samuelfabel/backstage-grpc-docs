@@ -8,7 +8,7 @@ import type {
   ChannelSecurity,
   GrpcOperation,
   MethodDescriptor,
-} from '@samuelfabel/plugin-grpc-docs-common';
+} from '@samuel.fabel/plugin-grpc-docs-common';
 import { GrpcDocsApiError, grpcDocsApiRef } from '../api/GrpcDocsApi';
 import { formatGrpcStatus } from '../lib/grpcStatus';
 import { rowsToMetadata, type MetadataRow } from '../lib/metadataRows';

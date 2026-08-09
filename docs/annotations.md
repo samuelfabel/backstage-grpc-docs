@@ -95,4 +95,4 @@ metadata:
               details: []
 ```
 
-Constants and parsers live in `@samuelfabel/plugin-grpc-docs-common` (`GRPC_DOCS_ENVIRONMENTS_ANNOTATION`, `GRPC_DOCS_OPERATIONS_ANNOTATION`, `parseEnvironments`, `parseOperations`).
+Constants and parsers live in `@samuel.fabel/plugin-grpc-docs-common` (`GRPC_DOCS_ENVIRONMENTS_ANNOTATION`, `GRPC_DOCS_OPERATIONS_ANNOTATION`, `parseEnvironments`, `parseOperations`).

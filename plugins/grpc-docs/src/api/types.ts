@@ -6,4 +6,4 @@ export type {
   ServiceDescriptor,
   UnaryCallRequest,
   UnaryCallResponse,
-} from '@samuelfabel/plugin-grpc-docs-common';
+} from '@samuel.fabel/plugin-grpc-docs-common';
